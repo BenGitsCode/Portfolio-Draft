@@ -9,3 +9,35 @@
   text-align: center;
   font-size: 7rem
 }
+
+/* Back To Top Button
+======================================*/
+
+.back-top{
+    position:fixed;
+    right:30px;
+    bottom:50px;
+    z-index:9999;
+}
+
+.back-top a{
+    opacity:0.5;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+
+.back-top .btn-primary{
+    background: #EE3B24;
+    border-color: #EE3B24;
+    padding: 0px;
+    font-size: 18px;
+    width: 36px;
+    height: 36px;
+}
+
+.back-top a:hover{
+    background: #EE3B24;
+    opacity: 1;
+}
