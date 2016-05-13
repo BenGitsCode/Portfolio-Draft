@@ -12,6 +12,9 @@ body, html {
   width:100%;
   background-color:#300438;
 }*/
+.about-cont {
+	background: rgba(237, 237, 237, 0.20);
+}
 
 .skills-cont {
 	background: rgba(202, 209, 216, 0.5);
