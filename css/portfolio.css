@@ -28,7 +28,7 @@ body, html {
 
 .web-icons {
   text-align: center;
-  font-size: 7rem
+  font-size: 7rem;
 }
 
 /* Back To Top Button
@@ -61,4 +61,11 @@ body, html {
 .back-top a:hover{
     background: #EE3B24;
     opacity: 1;
+}
+
+/*FOOTER*/
+
+.social-buttons {
+	text-align: center;
+	font-size: 6rem;
 }
