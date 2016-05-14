@@ -11,6 +11,11 @@ body, html {
   width:100%;
 }
 
+.about-text {
+	text-align: center;
+	color: black;
+}
+
 .about-cont {
 	background: rgba(202, 209, 216, 0.70);
 }
