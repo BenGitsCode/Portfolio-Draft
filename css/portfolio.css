@@ -6,6 +6,14 @@ body, html {
   background-attachment:fixed;
 }
 
+.bg-2 {
+	background-image: url('http://www.orangesmile.com/common/img_cities_original/boston-20061717-13.jpg');
+	margin: 0; padding: 0;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+
 .bg-sep {
   height:300px;
   width:100%;
