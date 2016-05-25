@@ -77,3 +77,6 @@ body, html {
 	text-align: center;
 	font-size: 6rem;
 }
+
+.bg-light-gray {
+  background-color: #f7f7f7;
