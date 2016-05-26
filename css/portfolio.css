@@ -35,9 +35,26 @@ body, html {
 }
 
 .web-icons {
-  text-align: center;
-  font-size: 7rem;
+ text-align: center;
+ font-size: 7rem;
 }
+
+
+
+/* Image fixes for portfolio
+======================================*/
+
+.scale-me {
+		height: 260px;
+}
+
+.img-circle {
+  border-radius: 50%;
+		height: 360px;
+}
+
+
+
 
 /* Back To Top Button
 ======================================*/
@@ -80,3 +97,4 @@ body, html {
 
 .bg-light-gray {
   background-color: #f7f7f7;
+}
