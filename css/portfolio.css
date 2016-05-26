@@ -51,6 +51,7 @@ body, html {
 .img-circle {
   border-radius: 50%;
 		height: 360px;
+		width: 290px;
 }
 
 
