@@ -6,6 +6,14 @@ body, html {
   background-attachment:fixed;
 }
 
+.bg-2 {
+	background-image: url('http://www.orangesmile.com/common/img_cities_original/boston-20061717-13.jpg');
+	margin: 0; padding: 0;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+
 .bg-sep {
   height:300px;
   width:100%;
@@ -21,7 +29,7 @@ body, html {
 }
 
 .skills-cont {
-	background: rgba(202, 209, 216, 0.70);
+	background: rgba(202, 209, 216, 0.90);
 }
 
 .skills h2 {
@@ -32,9 +40,52 @@ body, html {
 }
 
 .web-icons {
-  text-align: center;
-  font-size: 7rem;
+ text-align: center;
+ font-size: 7rem;
 }
+
+/* Nifty video background experiment
+======================================*/
+/*.header-text {
+	z-index: 2;
+	position: relative;
+}*/
+
+.header-div {
+    width:100vw;
+    height:100vh;
+    overflow:hidden;
+}
+video {
+    width:100%;
+    height:auto;
+}
+
+/*media query for still image on mobile*/
+@media screen and (max-device-width: 800px) {
+    html {
+         background: url(https://i.gyazo.com/d4aae42cd806e57314a2abd3bb533b7b.png) #000 no-repeat center center fixed;
+    }
+    #bgvid {
+        display: none;
+    }
+}
+
+/* Image fixes for portfolio
+======================================*/
+
+.scale-me {
+		height: 260px;
+}
+
+.img-circle {
+  border-radius: 50%;
+		height: 360px;
+		width: 290px;
+}
+
+
+
 
 /* Back To Top Button
 ======================================*/
@@ -73,4 +124,8 @@ body, html {
 .social-buttons {
 	text-align: center;
 	font-size: 6rem;
+}
+
+.bg-light-gray {
+  background-color: #f7f7f7;
 }
