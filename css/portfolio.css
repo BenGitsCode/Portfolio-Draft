@@ -84,9 +84,9 @@ video .header-vid {
 	opacity: .5;
 }
 
-.vid-pause button {
+.pause-btn button {
   display: block;
-  width: 80%;
+  width: 30%;
   padding: .4rem;
   border: none;
   margin: 1rem auto;
@@ -97,7 +97,7 @@ video .header-vid {
   cursor: pointer;
   transition: .3s background;
 }
-.vid-pause button:hover {
+.pause-btn button:hover {
    background: rgba(0,0,0,0.5);
 }
 /* Image fixes for portfolio
