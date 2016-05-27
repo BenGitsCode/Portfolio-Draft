@@ -26,7 +26,6 @@ $('.navbar-collapse ul li a').click(function() {
 // ===============================================
 
   $(window).scroll(function () {
-   // debugger;
             if ($(this).scrollTop() > 50) {
                 $('.back-top').fadeIn();
             } else {
