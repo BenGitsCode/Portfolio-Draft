@@ -46,19 +46,23 @@ body, html {
 
 /* Nifty video background experiment
 ======================================*/
+header {
+	position: relative;
+}
+
 /*.header-text {
 	z-index: 2;
 	position: relative;
 }*/
 
-.header-div {
-    width:100vw;
-    height:100vh;
-    overflow:hidden;
-}
+/*.header-div {
+ width:100vw;
+ height:100vh;
+ overflow:hidden;
+}*/
 video {
-    width:100%;
-    height:auto;
+ /*min-width:100%;*/
+ height:auto;
 }
 
 /*media query for still image on mobile*/
