@@ -75,6 +75,31 @@ video {
   }
 }
 
+/*Pause features*/
+video .header-vid {
+    transition: 1s opacity;
+}
+
+.stopfade {
+	opacity: .5;
+}
+
+.vid-pause button {
+  display: block;
+  width: 80%;
+  padding: .4rem;
+  border: none;
+  margin: 1rem auto;
+  font-size: 1.3rem;
+  background: rgba(255,255,255,0.23);
+  color: #fff;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: .3s background;
+}
+.vid-pause button:hover {
+   background: rgba(0,0,0,0.5);
+}
 /* Image fixes for portfolio
 ======================================*/
 

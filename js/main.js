@@ -50,7 +50,7 @@ $('.navbar-collapse ul li a').click(function() {
 // ===============================================
 
 
-      var vid = document.getElementById("bgvid"),
+      var vid = document.getElementById(".header-vid"),
       pauseButton = document.getElementById("vidpause");
       function vidFade() {
           vid.classList.add("stopfade");
