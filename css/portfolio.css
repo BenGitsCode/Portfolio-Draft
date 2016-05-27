@@ -57,6 +57,7 @@ video {
 	position: relative;
 }
 
+/*added specifically for video pause button*/
 video {
  transition: 1s opacity;
 }
