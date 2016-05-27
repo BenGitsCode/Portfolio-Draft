@@ -57,14 +57,21 @@ video {
 	position: relative;
 }
 
+video {
+ transition: 1s opacity;
+}
+.stopfade {
+	opacity: .5;
+}
+
 /*media query for still image on mobile*/
 @media screen and (max-device-width: 800px) {
-    html {
-         background: url(https://i.gyazo.com/d4aae42cd806e57314a2abd3bb533b7b.png) #000 no-repeat center center fixed;
-    }
-    #bgvid {
-        display: none;
-    }
+  .header-vid {
+       background: url(https://i.gyazo.com/d4aae42cd806e57314a2abd3bb533b7b.png) #000 no-repeat center center fixed;
+  }
+  video {
+      display: none;
+  }
 }
 
 /* Image fixes for portfolio
