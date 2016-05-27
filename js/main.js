@@ -57,9 +57,9 @@ var vid = document.getElementById("bgvid");
 var pauseButton = document.querySelector(".pause-btn");
 debugger;
 
-function vidFade() {
-vid.classList.add("stopfade");
-}
+// function vidFade() {
+// vid.classList.add("stopfade");
+// }
 
 vid.addEventListener('ended', function()
 {
