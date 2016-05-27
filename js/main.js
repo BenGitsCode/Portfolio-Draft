@@ -54,29 +54,24 @@ $('.navbar-collapse ul li a').click(function() {
 
 
 var vid = document.getElementById("bgvid");
-var pauseButton = document.querySelector(".pause-btn");
-debugger;
-
-// function vidFade() {
-// vid.classList.add("stopfade");
-// }
-
-vid.addEventListener('ended', function()
-{
-// only functional if "loop" is removed
-vid.pause();
-// to capture IE10
-vidFade();
-});
+var learnButton = document.querySelector(".lrn-btn");
 
 
-pauseButton.addEventListener("click", function() {
-vid.classList.toggle("stopfade");
+learnButton.addEventListener("mouseover", function() {
 if (vid.paused) {
 vid.play();
-pauseButton.innerHTML = "Pause";
+// learnButton.innerHTML = "Pause";
 } else {
 vid.pause();
-pauseButton.innerHTML = "Paused";
+// learnButton.innerHTML = "Paused";
 }
 });
+// learnButton.addEventListener("mouseover", function() {
+// if (vid.paused) {
+// vid.play();
+// // learnButton.innerHTML = "Pause";
+// } else {
+// vid.pause();
+// // learnButton.innerHTML = "Paused";
+// }
+// });
