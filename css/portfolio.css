@@ -46,9 +46,9 @@ body, html {
 
 /* Nifty video background experiment
 ======================================*/
-header {
+/*header {
 	position: relative;
-}
+}*/
 
 /*.header-text {
 	z-index: 2;
@@ -61,7 +61,7 @@ header {
  overflow:hidden;
 }*/
 video {
- /*min-width:100%;*/
+	width: 100%;
  height:auto;
 }
 
