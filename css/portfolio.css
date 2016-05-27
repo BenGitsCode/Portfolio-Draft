@@ -41,34 +41,30 @@ body, html {
 
 /* Nifty video background experiment
 ======================================*/
-.header text {
+/*.header-text {
 	z-index: 2;
 	position: relative;
+}*/
+
+.header-div {
+    width:100vw;
+    height:100vh;
+    overflow:hidden;
+}
+video {
+    width:100%;
+    height:auto;
 }
 
-#video-background {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
-  z-index: 1;
-}
 
-#video-background.collapsing {
-  display:none;
-}
-
-@media screen and (max-device-width: 800px) {
+/*@media screen and (max-device-width: 800px) {
     html {
          background: url(polina.jpg) #000 no-repeat center center fixed;
     }
     #bgvid {
         display: none;
     }
-}
+}*/
 
 /* Image fixes for portfolio
 ======================================*/
