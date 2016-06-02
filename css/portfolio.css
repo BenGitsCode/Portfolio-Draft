@@ -49,6 +49,21 @@ body, html {
  font-size: 7rem;
 }
 
+/* NAVBAR BRAND
+======================================*/
+
+.navbar-default .navbar-brand {
+  color: #FFFFFF;
+  font-family: "Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus,
+.navbar-default .navbar-brand:active,
+.navbar-default .navbar-brand.active {
+  color: #6A9A1F;
+}
+
+
 /* Nifty video background experiment
 ======================================*/
 
