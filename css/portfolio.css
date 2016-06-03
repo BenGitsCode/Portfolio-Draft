@@ -1,5 +1,5 @@
 body, html {
-	background-image: url('../img/bosnight.jpg');
+	background-image: url('/img/fixed-bg-boston-1.jpg');
   margin:0; padding:0;
 
   /* Thhis is important for cool scrolliness */
@@ -7,7 +7,7 @@ body, html {
 }
 
 .bg-2 {
-	background-image: url('http://www.orangesmile.com/common/img_cities_original/boston-20061717-13.jpg');
+	/*background-image: url('/img/fixed-bg-boston-1.jpg');*/
 	margin: 0; padding: 0;
 	background-attachment: fixed;
 	background-size: cover;
