@@ -173,3 +173,56 @@ video {
 .bg-light-gray {
   background-color: #f7f7f7;
 }
+
+/* Email Me button
+======================================*/
+
+.email-me {
+	position: absolute;
+	top: calc(50% - 30px);
+	right: calc(50% - 115px);
+	width: 230px;
+	height: 60px;
+	background-image: -webkit-linear-gradient(bottom, rgba(0,0,0,.075), rgba(255,255,255,.045));
+	background-image: linear-gradient(to top, rgba(0,0,0,.075), rgba(255,255,255,.045));
+    box-shadow: inset 0 -1px 0 rgba(0,0,0,.09),inset 0 1px 0 rgba(255,255,255,.04), 0 0 1px rgba(0,0,0,.3), 0 0 10px rgba(0,0,0,.1);
+	border-radius: 100px;
+	color: rgba(255,255,255,.9);
+	line-height: 60px;
+	text-align: center;
+	letter-spacing: 5px;
+	overflow: hidden;
+	transition: all .3s cubic-bezier(.67,.13,.1,.81), transform .15s cubic-bezier(.67,.13,.1,.81);
+}
+.email-me:hover {
+	right: calc(50% - 200px);
+	width: 400px;
+}
+.email-me:active {
+	transform: translateY(3px);
+}
+.email-me:before, .email-me:after {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	opacity: 1;
+	transition: all .3s cubic-bezier(.67,.13,.1,.81);
+}
+.email-me:before {
+	content: 'Email Me';
+}
+.email-me:after {
+	content: 'BenGitsCode@gmail.com';
+	top: -60px;
+	opacity: 0;
+}
+.email-me:hover:after {
+	top: 0px;
+	opacity: 1;
+}
+.email-me:hover:before {
+	top: 60px;
+	opacity: 0;
+}
