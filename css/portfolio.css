@@ -1,5 +1,5 @@
 body, html {
-	background-image: url('/img/fixed-bg-boston-1.jpg');
+	background-image: url('../img/south-bos-sunset.jpg');
   margin:0; padding:0;
 
   /* Thhis is important for cool scrolliness */
@@ -78,7 +78,10 @@ video {
 }
 
 
-/*media query for still image on mobile*/
+/* MEDIA QUERIES FOR MOBILE
+======================================*/
+
+/*media query for still image on mobile instead of video*/
 @media screen and (max-device-width: 800px) {
 	body, html {
 		background-image: url(http://www.beautycolorcode.com/3498db-2880x1800.png);
@@ -93,7 +96,8 @@ video {
   }
 }
 
-.pause-btn {
+/* May not use this pause buttton */
+/*.pause-btn {
   display: block;
   width: 30%;
   padding: .4rem;
@@ -108,7 +112,7 @@ video {
 }
 .pause-btn button:hover {
    background: rgba(0,0,0,0.5);
-}
+}*/
 /* Image fixes for portfolio
 ======================================*/
 
