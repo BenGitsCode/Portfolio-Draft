@@ -1,13 +1,14 @@
 body, html {
-	background-image: url('../img/bosnight.jpg');
+	background-image: url('../img/south-bos-sunset.jpg');
   margin:0; padding:0;
 
   /* Thhis is important for cool scrolliness */
   background-attachment:fixed;
+		background-size: cover;
 }
 
 .bg-2 {
-	background-image: url('http://www.orangesmile.com/common/img_cities_original/boston-20061717-13.jpg');
+	/*background-image: url('/img/fixed-bg-boston-1.jpg');*/
 	margin: 0; padding: 0;
 	background-attachment: fixed;
 	background-size: cover;
@@ -19,6 +20,18 @@ body, html {
   width:100%;
 }
 
+.bg-sep {
+  height:300px;
+  width:100%;
+}
+
+.bg-sep-3 {
+	background-image: url('/img/sunny-bos.jpg');
+	margin: 0; padding: 0;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
 .about-text {
 	text-align: center;
 	color: black;
@@ -27,6 +40,10 @@ body, html {
 
 .about-cont {
 	background: rgba(202, 209, 216, 0.90);
+}
+
+#resume-dl {
+	font-size: em5;
 }
 
 .text-muted {
@@ -54,13 +71,14 @@ body, html {
 
 .navbar-default .navbar-brand {
   color: #FFFFFF;
-  font-family: "Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive;
+  font-family: "Consolas", "Helvetica Neue", Helvetica, Arial, cursive;
 }
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus,
 .navbar-default .navbar-brand:active,
 .navbar-default .navbar-brand.active {
-  color: #6A9A1F;
+  color: #EA0028;
+		text-shadow: 1px 0px 0px #D32113;
 }
 
 
@@ -78,17 +96,26 @@ video {
 }
 
 
-/*media query for still image on mobile*/
+/* MEDIA QUERIES FOR MOBILE
+======================================*/
+
+/*media query for still image on mobile instead of video*/
 @media screen and (max-device-width: 800px) {
+	body, html {
+		background-image: url(http://www.beautycolorcode.com/3498db-2880x1800.png);
+	}
   .header-vid {
-       background: url(https://i.gyazo.com/d4aae42cd806e57314a2abd3bb533b7b.png) #000 no-repeat center center fixed;
+       background: url(/header-vid-static.jpg) #000 no-repeat center center fixed;
   }
+
+
   video {
       display: none;
   }
 }
 
-.pause-btn {
+/* May not use this pause buttton */
+/*.pause-btn {
   display: block;
   width: 30%;
   padding: .4rem;
@@ -103,7 +130,7 @@ video {
 }
 .pause-btn button:hover {
    background: rgba(0,0,0,0.5);
-}
+}*/
 /* Image fixes for portfolio
 ======================================*/
 
@@ -117,6 +144,23 @@ video {
 		width: 290px;
 }
 
+/* Portfolio
+======================================*/
+
+#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
+    position: absolute;
+    width: 100%;
+    height: 10px;
+    font-size: 20px;
+    text-align: center;
+    top: 30%;
+    margin-top: -70px;
+    color: #fff;
+}
+
+.portfolio-hover-content p {
+  font-size: 14px;
+}
 
 
 
@@ -161,4 +205,64 @@ video {
 
 .bg-light-gray {
   background-color: #f7f7f7;
+}
+
+/* Email Me button
+======================================*/
+
+.email-me {
+	position: absolute;
+	top: calc(50% - 30px);
+	right: calc(50% - 115px);
+	width: 230px;
+	height: 60px;
+	background-image: -webkit-linear-gradient(bottom, rgba(0,0,0,.075), rgba(255,255,255,.045));
+	background-image: linear-gradient(to top, rgba(0,0,0,.075), rgba(255,255,255,.045));
+    box-shadow: inset 0 -1px 0 rgba(0,0,0,.09),inset 0 1px 0 rgba(255,255,255,.04), 0 0 1px rgba(0,0,0,.3), 0 0 10px rgba(0,0,0,.1);
+	border-radius: 100px;
+	color: rgba(255,255,255,.9);
+	line-height: 60px;
+	text-align: center;
+	letter-spacing: 5px;
+	overflow: hidden;
+	transition: all .3s cubic-bezier(.67,.13,.1,.81), transform .15s cubic-bezier(.67,.13,.1,.81);
+}
+
+.email-me:hover {
+	right: calc(50% - 200px);
+	width: 400px;
+}
+
+.email-me:active {
+	transform: translateY(3px);
+}
+
+.email-me:before, .email-me:after {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	opacity: 1;
+	transition: all .3s cubic-bezier(.67,.13,.1,.81);
+}
+
+.email-me:before {
+	content: 'Email Me';
+}
+
+.email-me:after {
+	content: 'BenGitsCode@gmail.com';
+	top: -60px;
+	opacity: 0;
+}
+
+.email-me:hover:after {
+	top: 0px;
+	opacity: 1;
+}
+
+.email-me:hover:before {
+	top: 60px;
+	opacity: 0;
 }
