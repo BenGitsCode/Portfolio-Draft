@@ -7,6 +7,10 @@ body, html {
 		background-size: cover;
 }
 
+.bg-1 {
+	
+}
+
 .bg-2 {
 	/*background-image: url('/img/fixed-bg-boston-1.jpg');*/
 	margin: 0; padding: 0;
@@ -18,6 +22,18 @@ body, html {
 .bg-sep {
   height:300px;
   width:100%;
+}
+
+.bg-sep {
+  height:300px;
+  width:100%;
+}
+
+.bg-sep-3 {
+	background-image: url('/img/sunny-bos.jpg');
+	margin: 0; padding: 0;
+	background-attachment: fixed;
+	background-size: cover;
 }
 
 .about-text {
