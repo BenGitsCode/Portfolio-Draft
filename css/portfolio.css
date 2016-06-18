@@ -51,6 +51,10 @@ body, html {
   color: #777777;
 }
 
+.text-contact {
+  color: #fff;
+}
+
 .skills-cont {
 	background: rgba(202, 209, 216, 0.90);
 }
