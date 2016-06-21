@@ -364,5 +364,11 @@ video {
 
 .drop-up {
     top: auto;
-    bottom: 100% !important;
+   	bottom: 100% !important;
+}
+
+#drop-btn:active,
+#drop-btn:focus,
+#drop-btn:hover {
+		background: #EE3B24;
 }
